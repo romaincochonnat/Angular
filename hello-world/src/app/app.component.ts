@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ImagecomponentComponent } from './imagecomponent/imagecomponent.component';
-import { TextcomponentComponent } from './textcomponent/textcomponent.component'
+import { TextcomponentComponent } from './textcomponent/textcomponent.component';
+import { FormComponentComponent } from './form-component/form-component.component';
+
+import { FormsModule} from '@angular/forms';
+
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TextcomponentComponent, ImagecomponentComponent],
+  imports: [RouterOutlet, TextcomponentComponent, ImagecomponentComponent, FormComponentComponent, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
